@@ -247,7 +247,7 @@ code {
   padding: 0 20px;
 }
 .container-inner {
-  max-width: 1120px;
+  max-width: 1920px;
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
@@ -294,7 +294,7 @@ code {
   box-sizing: border-box;
   -webkit-box-shadow: rgba(0,0,0,0.098) 0px 1px 1px 0px;
   box-shadow: rgba(0,0,0,0.098) 0px 1px 1px 0px;
-  padding-left: 340px;
+  padding-left: 200px;
   background: url("images/s-left.png") repeat-y left 0;
 }
 .main-body-inner:before,
@@ -344,7 +344,6 @@ code {
   clear: both;
 }
 #header {
-  background: #26272b;
   padding-bottom: 60px;
   position: relative;
 }
@@ -355,9 +354,21 @@ code {
 #header-inner {
   position: relative;
 }
+#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/banner.jpg") center #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
 #header-title {
   text-align: center;
-  padding: 30px 30px;
+  padding: 10px 10px;
 }
 #header-title:before,
 #header-title:after {
@@ -376,7 +387,7 @@ code {
   margin-left: 20px;
 }
 #header-title .subtitle {
-  font-size: 16px;
+  font-size: 26px;
   font-style: italic;
   line-height: 70px;
   color: rgba(255,255,255,0.7);
@@ -557,8 +568,8 @@ code {
 }
 #sidebar {
   float: left;
-  margin-left: -340px;
-  width: 340px;
+  margin-left: -200px;
+  width: 200px;
 }
 #sidebar .sidebar-toggle {
   display: none;
@@ -699,7 +710,7 @@ code {
   color: #666;
 }
 .widget-wrap {
-  padding: 30px 30px 20px;
+  padding: 6px 6px 6px;
 }
 .widget-title {
   font-size: 15px;
@@ -1881,6 +1892,10 @@ i.icon:before {
     display: block !important;
   }
 }
+.main-body-inner {
+  padding-left: 200px;
+  background-position: -140px 0 !important;
+}
 @media only screen and (min-width: 480px) and (max-width: 959px) {
   #header {
     padding-bottom: 50px;
@@ -1963,7 +1978,7 @@ i.icon:before {
     transition: opacity 0.2s ease-in;
   }
   .main-body-inner #sidebar.expend {
-    width: 340px;
+    width: 200px;
     overflow-y: auto;
     z-index: 2;
     -webkit-transition: width 0.2s ease-in;
@@ -2120,7 +2135,7 @@ i.icon:before {
     float: none;
     margin: 0px;
     width: 100%;
-    background: #f0f0f0;
+    background: #000;
   }
   #sidebar .sidebar-top,
   #sidebar .widget-wrap {
